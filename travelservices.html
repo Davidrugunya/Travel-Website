@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Travel with Adventure Safaris</title>
+		<meta charset = "UTF-8">
+		<meta name = "description" content = "travel">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name = "view port" content = "width = device-width,initial-scale = 1">
+		<link href="travelservices.css" type="text/css" rel="stylesheet">
+		<script>
+			var i=0;
+			function drop(name){
+				
+				if (i!=0){
+					document.getElementById(name).style.display="none";
+					i=0;
+					}
+				else{document.getElementById(name).style.display="block";
+					 i++;}
+				}
+		</script>
+	</head>
+	<body>
+		<!--image header with logo,navbar,page header-->
+		<header id="showcase">
+			<div id ="top">
+				<a href = "travelindex.html"><img href = "travelindex.html"src = "images/Globe.png"/><b>
+				Adventure Safaris</b></a>
+			    <!--when resized(500px)-->
+				<nav class="floating" id="navbar">
+					<button id="menubtn">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+					</button>
+					<ul class="floating" id="menu-list">
+						<li>
+							<a href = "travelindex.html" >Home</a>
+						</li>
+						<li>
+							<a href = "travelabout.html" >About</a>
+						</li>
+						<li>
+							<a href = "travelservices.html" >Travel</a>
+						</li>
+						<li>
+							<a href = "whytravel.html" >Why Us?</a>
+						</li>
+						<li class="learn">
+							<a href = "travelcontact.html" >Contact</a>
+						</li>
+						
+					</ul>
+				</nav>
+			</div>
+			<br/>
+		
+			<span>
+				<h1>TRAVEL</h1>
+				
+			</span>
+		</header>
+		<main>
+		<!--content-->
+			<article id="services" class="blocks">
+				<h3>EXPERIENCES</h3>
+				<section class="floating">
+					<p>This is just dummy text to fill the space.It does not do anything, it does not say anything.It just fills up space.This is just dummy text to fill the space.It does not do anything, it does not say anything.It just fills up space.
+					<br/>This is just dummy text to fill the space.It does not do anything, it does not say anything.It just fills up space.This is just dummy text to fill the space.It just fills up space.</p>
+					<img src = "images/elephants-mountain.jpg"/>
+				</section>
+				<section>
+					<img src = "images/maasai.jpg"/>
+					<img src = "images/canopy-bridge.jpg"/>
+				</section>
+				
+			</article>
+			
+			<article class="infoblocks">
+				<h3>LOCATIONS</h3>
+				<section id="info1" class="floating">
+					<div>
+						<h4>National Park</h4>
+						<br/>
+						<a class="colormore" href="">Book Trip</a>
+					</div>
+				</section>
+				<section id="info2" class="floating">
+					<div>
+						<h4>Beach</h4>
+						<br/>
+						<a class="colormore" href="">Book Trip</a>
+					</div>
+				</section>
+				<section id="info3">
+					<div>
+						<h4>Mountain</h4>
+						<br/>
+						<a class="colormore" href="">Book Trip</a>
+					</div>
+				</section>
+				<section id="info4">
+					<div>
+						<h4>Local Market</h4>
+						<br/>
+						<a class="colormore" href="">Book Trip</a>
+					</div>
+				</section>
+				<section id="info5">
+					<div>
+						<h4>Nature Hike</h4>
+						<br/>
+						<a class="colormore" href="">Book Trip</a>
+					</div>
+				</section>
+				<section id="info6">
+					<div>
+						<h4>Cultural Center</h4>
+						<br/>
+						<a class="colormore" href="">Book Trip</a>
+					</div>
+				</section>
+				
+			</article>	
+			
+			<article class="blocks">
+				<h3>ACTIVITIES</h3>
+				<section class="floating">
+					<p>This is just dummy text to fill the space.It does not do anything, it does not say anything.It just fills up space.This is just dummy text to fill the space.It does not do anything, it does not say anything.It just fills up space.This is just dummy text to fill the space.
+					</p>
+					<br/>
+					<img src = "images/hot-air-balloon-lg.jpg"/>
+				</section>
+				<section>
+					<img src = "images/camp.jpg"/>
+					<img src = "images/wind-surfing-sqr.jpg"/>
+				</section>
+				
+			</article>
+			<br/><br/>
+			<article class="blocks">
+				<img src = "images/map-1-sqr.jpg"/>
+				<br/>
+				<section class="floating">
+					<h4>Equipment</h4>
+					<p>This is just dummy text to fill the space.It does not do anything, it does not say anything.It just fills up space.This is just dummy text to fill the space.It does not do anything, it does not say anything.It just fills up space.
+					</p>
+					<p class="extend" id="one">This is just dummy text to fill the space.It does not do anything, it does not say anything.It just fills up space.This is just dummy text to fill the space.It does not do anything, it does not say anything.It just fills up space.
+					</p>
+					<br/>
+					<a class="more" onclick="drop('one')">Book Equipment</a>
+					<br/>
+				</section>
+				<section>
+					<h4>Guide</h4>
+					<p>This is just dummy text to fill the space.It does not do anything, it does not say anything.It just fills up space.This is just dummy text to fill the space.It does not do anything, it does not say anything.It just fills up space.
+					</p>
+					<p class="extend" id="two">This is just dummy text to fill the space.It does not do anything, it does not say anything.It just fills up space.This is just dummy text to fill the space.It does not do anything, it does not say anything.It just fills up space.
+					</p>
+					<br/>
+					<a class="more" onclick="drop('two')">Plan Your Trip</a>
+					<br/>
+				</section>
+			</article>
+			
+			<article class="imgsection" id="section1">
+				<section>
+					<h2>Explore Kenya</h2>
+					<p>This is just dummy text to fill the space.It does not do anything, it does not say anything.It just fills up space.This is just dummy text to fill the space.It does not do anything, it does not say anything.It just fills up space.
+					<br/>This is just dummy text to fill the space.It does not do anything, it does not say anything.It just fills up space.</p>
+					<br/>
+					<a class="more" href = "whytravel.html">Why Us?</a>
+					<br/>
+				</section>
+			</article>	
+			
+		</main>
+		
+		<footer class="floating" id = "foot">
+			<ul>
+				<li>
+					<a href = "travelindex.html" >Home</a>
+				</li>
+				<li>
+					<a href = "travelabout.html" >About</a>
+				</li>
+				<li>
+					<a href = "travelservices.html" >Travel</a>
+				</li>
+				<li>
+					<a href = "whytravel.html" >Why Us?</a>
+				</li>
+				<li>
+					<a href = "travelcontact.html" >Contact</a>
+				</li>
+			</ul>
+				<!--links to social media-->
+			<div id = "links">
+				<a href = "https://m.facebook.com/home.php?" target = "_blank">
+					<input type = "image" id = "fb" src ="images/fbcircleblack.png"/>
+				</a>
+				<a href = "https://www.twitter.com/" target = "_blank">
+					<input type = "image" id = "tw" src ="images/twitter.black.png"/>
+				</a>
+				<a href = "https://www.instagram.com" target = "_blank">
+					<input type = "image" id = "ins" src ="images/instagram.black.png"/>
+				</a>
+			</div>
+			<!--copyright,trademark and location-->
+			<p>Address  |  myemail@gmail.com  <br/> &copy 2019 Adventure Safaris<p>
+		</footer>
+	</body>
+	
+</html>

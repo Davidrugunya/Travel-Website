@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Adventure Safaris</title>
+		<meta charset = "UTF-8">
+		<meta name = "description" content = "travel">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name = "view port" content = "width = device-width,initial-scale = 1">
+		<link href="travelindex.css" type="text/css" rel="stylesheet">
+		<script>
+			var i=0;
+			function drop(name){
+				
+				if (i!=0){
+					document.getElementById(name).style.display="none";
+					i=0;
+					}
+				else{document.getElementById(name).style.display="block";
+					 i++;}
+				}
+			
+		</script>
+	</head>
+	<body>
+		<!--image header with logo,navbar,page header-->
+		<header id="showcase">
+			<div id ="top">
+				<a href = "travelindex.html"><img href = "travelindex.html"src = "images/Globe.png"/><b>
+				Adventure Safaris</b></a>
+			    <!--when resized(500px)-->
+				<nav id="navbar">
+					
+					<button id="menubtn" onclick="navdrop()">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+					</button>
+					<ul id="menu-list">
+						<li>
+							<a href = "travelindex.html" >Home</a>
+						</li>
+						<li>
+							<a href = "travelabout.html" >About</a>
+						</li>
+						<li>
+							<a href = "travelservices.html" >Travel</a>
+						</li>
+						<li>
+							<a href = "whytravel.html" >Why Us?</a>
+						</li>
+						<li class="learn">
+							<a href = "travelcontact.html" >Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<br/>
+		
+			<span>
+				<h1>WELCOME</h1>
+				<p>This is just dummy text to fill the space.It does not do anything, it does not say anything.It just fills up space.</p>
+				<br/>
+			</span>
+		</header>
+		<main>
+		<!--content-->
+			<article class="blocks">
+				<h2>Discover Kenya</h2>
+				<p>This is just dummy text to fill the space.It does not do anything, it does not say anything.It just fills up space.This is just dummy text to fill the space.It does not do anything, it does not say anything.It just fills up space.
+				</p>
+				<br/>
+				<a class="colormore" href = "travelabout.html">About Us</a>
+			</article>			
+			
+			<article class="card">
+				<h3>POPULAR PLACES</h3>
+				<section id="info1" class="floating">
+					<div>
+						<h4>National Park</h4>
+					</div>
+				</section>
+				<section id="info2" class="floating">
+					<div>
+						<h4>Beach</h4>
+					</div>
+				</section>
+				<section id="info3">
+					<div>
+						<h4>Mountain</h4>
+					</div>
+				</section>
+					<br/><br/>
+					<a class="more" href = "travelservices.html">See More Experiences</a>
+			</article>
+			<br/>	
+			
+			<article id="services" class="blocks">
+				<h3>TOURS</h3>
+				<section class="floating">
+					
+					<p>This is just dummy text to fill the space.It does not do anything, it does not say anything.It just fills up space.This is just dummy text to fill the space.It does not do anything, it does not say anything.It just fills up space.
+					<br/>This is just dummy text to fill the space.It does not do anything, it does not say anything.It just fills up space.It just fills up space.</p>
+					<br/>
+					<a class="colormore" href="travelservices.html">Book Now</a>
+					<br/>
+					<img src = "images/girraffe-hill.jpg"/>
+				</section>
+				<section>
+					<img src = "images/daylight-elephants.jpg"/>
+					<img src = "images/elephants-river.jpg"/>
+				</section>
+			</article>
+			
+			<article class="blocks">
+				<h3>SEASONAL EVENTS</h3>
+				<section class="floating">
+					<img src = "images/elephant-mother-calf.jpg"/>
+					<br/>
+					<h4>Elephants</h4>
+					<p>This is just dummy text to fill the space.It does not do anything, it does not say anything.
+					</p>
+					<p class="extend" id="one">This is just dummy text to fill the space.It does not do anything, it does not say anything.It just fills up space.This is just dummy text to fill the space.It does not do anything, it does not say anything.It just fills up space.
+					</p>
+					<br/>
+					<a class="more" onclick="drop('one')">Learn More</a>
+					<br/>
+				</section>
+				<section>
+					<img src = "images/zebras.jpg"/>
+					<br/>
+					<h4>Migration</h4>
+					<p>This is just dummy text to fill the space.It does not do anything, it does not say anything.
+					</p>
+					<p class="extend" id="two">This is just dummy text to fill the space.It does not do anything, it does not say anything.It just fills up space.This is just dummy text to fill the space.It does not do anything, it does not say anything.It just fills up space.
+					</p>
+					<br/>
+					<a class="more" onclick="drop('two')">Learn More</a>
+					<br/>
+				</section>
+			</article>	
+			
+			<article class="imgsection" id="section1">
+				<section>
+					<h2>Explore Kenya</h2>
+					<p>This is just dummy text to fill the space.It does not do anything, it does not say anything.It just fills up space.This is just dummy text to fill the space.It does not do anything, it does not say anything.It just fills up space.
+					<br/>This is just dummy text to fill the space.It does not do anything, it does not say anything.It just fills up space.</p>
+					<br/>
+					<a class="more" href = "travelservices.html">Learn More</a>
+					<br/>
+				</section>
+			</article>	
+			
+			<article class="blocks">
+				<section class="floating">
+					<h4>Travel Essentials</h4>
+					<p>This is just dummy text to fill the space.It does not do anything, it does not say anything.It just fills up space.This is just dummy text to fill the space.It does not do anything, it does not say anything.It just fills up space.
+					</p>
+					<p class="extend" id="three">This is just dummy text to fill the space.It does not do anything, it does not say anything.It just fills up space.This is just dummy text to fill the space.It does not do anything, it does not say anything.It just fills up space.
+					</p>
+					<br/>
+					<a class="more" onclick="drop('three')">Learn More</a>
+					<br/>
+				</section>
+				<section>
+					<h4>What you should know</h4>
+					<p>This is just dummy text to fill the space.It does not do anything, it does not say anything.It just fills up space.This is just dummy text to fill the space.It does not do anything, it does not say anything.It just fills up space.
+					</p>
+					<p class="extend" id="four">This is just dummy text to fill the space.It does not do anything, it does not say anything.It just fills up space.This is just dummy text to fill the space.It does not do anything, it does not say anything.It just fills up space.
+					</p>
+					<br/>
+					<a class="more" onclick="drop('four')">Learn More</a>
+					<br/>
+				</section>
+			</article>
+			<article>
+				<h3><a href = "https://www.instagram.com">@MagicalKenya</a></h3>
+				<video src="vid.mp4" poster="images/cheetah.jpg" controls></video>
+				<video src="vid.mp4" poster="images/daylight-elephants.jpg" controls></video>
+				<video src="vid.mp4" poster="images/girraffe-sunset.jpg" controls></video>
+			</article>
+		</main>
+		
+		<footer class="floating" id = "foot">
+			<ul>
+				<li>
+					<a href = "travelindex.html" >Home</a>
+				</li>
+				<li>
+					<a href = "travelabout.html" >About</a>
+				</li>
+				<li>
+					<a href = "travelservices.html" >Travel</a>
+				</li>
+				<li>
+					<a href = "whytravel.html" >Why Us?</a>
+				</li>
+				<li>
+					<a href = "travelcontact.html" >Contact</a>
+				</li>
+			</ul>
+				<!--links to social media-->
+			<div id = "links">
+				<a href = "https://m.facebook.com/home.php?" target = "_blank">
+					<input type = "image" id = "fb" src ="images/fbcircleblack.png"/>
+				</a>
+				<a href = "https://www.twitter.com/" target = "_blank">
+					<input type = "image" id = "tw" src ="images/twitter.black.png"/>
+				</a>
+				<a href = "https://www.instagram.com" target = "_blank">
+					<input type = "image" id = "ins" src ="images/instagram.black.png"/>
+				</a>
+			</div>
+			<!--copyright,trademark and location-->
+			<p>Address  |  myemail@gmail.com  <br/> &copy 2019 Adventure Safaris<p>
+		</footer>
+	</body>
+	
+</html>
