@@ -1,0 +1,621 @@
+*{
+	margin:0;
+	padding:0;
+	text-decoration:none;
+	box-sizing:border-box;
+}
+body{
+	background-color:white;
+	font-family:Geneva,Tahoma,san-serif;
+	color:#323232;
+	line-height:1.4;
+	text-align:center;
+	height:100%;
+}
+.floating{float:left;}
+.overlay{
+	background:rgba(0,0,0,0.3);
+	height:100%;
+	padding:0.3em;
+}
+.divider{
+	background:transparent;
+	height:4.2em !important;
+	padding:0.2em;
+}
+.spacer{
+	background:transparent;
+	height:2.9em !important;
+}
+
+.logo{
+	float:left;
+	position:relative;
+	cursor:pointer;
+	border:none;
+	background:url('images/gazelle logo brown.png')center no-repeat;
+	background-size:contain;
+	width:80px;
+	height:60px;
+}
+
+header{
+	display:block;
+	height:4em;
+	padding:0.1em 0.2em;
+	margin-bottom:0px;
+	position:fixed;
+	width:100%;
+	z-index:4;
+	transition:top 0.3s;
+}
+.navbar_collapse{height:250px !important;}
+	
+.menubtn{
+	display:block;
+	float:right;
+	margin:5px;
+	background:transparent;
+	border:none;
+	cursor:pointer;
+}
+.menubtn:hover{
+	border:solid 1px white;
+	border-radius:5px;
+}
+.bar1,.bar2,.bar3{
+	width:30px;
+	height:5px;
+	margin:0.5rem;
+	background:white;
+	box-shadow:1px 1px 1px 1px #333;
+	transition:all 0.5s ease;
+}
+.change .bar1{transform:rotate(-45deg) translate(-10px,10px)}
+.change .bar2{opacity:0;}
+.change .bar3{transform:rotate(45deg) translate(-8px,-8px)}
+
+.menu-list{
+	display:block;
+	float:right;
+	width:100%;
+	height:0;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	transition:all 0.5s ease;
+	list-style-type:none;
+	z-index:3;
+}
+.menu-list li{
+	display:block;
+	padding:0;
+	margin:0;
+	background:#05474d;
+	border-radius:0px;
+	padding:16px;
+	margin:0px;
+}
+.link{
+	font:normal 20px tahoma !important;
+	color:white;
+	text-shadow:-1px 1px 2px #333;
+	cursor:pointer;
+	text-decoration:none;
+	z-index:3;
+}
+#showcase {
+	height: 700px;
+	color:white;
+	text-align:center;
+	background:url('images/kilimanjaro elephants-wide.jpg')center no-repeat;
+	background-size:cover;
+}
+#showcase h1{
+	font:normal 30px trebuchet ms;
+	color:gold;
+}
+#showcase h2{
+	font:bold 55px arial;
+}
+#showcase span{
+	text-shadow:-1px 1px 2px black;
+	position: relative;
+	animation: heading;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+@keyframes heading{
+	0% {top: 700px;opacity: 0}
+	100% {top: 220px;opacity: 1}
+}
+
+h1{
+	font-size:32px;
+	color:#087547;
+	margin-left:0.5em;}
+h2{
+	font:bold 25px tahoma;
+	margin-left:0.5em;
+	letter-spacing:1px;}
+h3{
+	font:bold 21px tahoma;
+	color:#087547;
+	margin:0.6em 0;
+}
+h4{
+	font:normal 21px tahoma;
+	color:#085598;
+}
+h5{ 
+	font:normal 17px arial;
+	margin:0.1em;
+}
+
+main b{
+	font:normal 20px tahoma;
+	color:black;
+}
+.learn{
+	background:#603516;
+	font:normal 18px tahoma;
+	color:white;
+	padding:0.3em 1em;
+	margin:0.5em;
+	border:solid 1px #603516;
+	border-radius:22px;
+	text-shadow:-1px 1px 2px #333;
+	cursor:pointer;
+}
+.learn:hover{
+	background:black !important;
+	color:white;
+}
+.learn:active{
+	border:solid 2px red;
+}
+
+header .learn{
+	background:#603516;
+	color:white;
+	border:solid 2px #603516;
+	text-shadow:none;
+}
+.more{
+	background:white;
+	color:#1773c2;
+	padding:0.1em;
+	border:none;
+	cursor:pointer;
+	text-decoration:none;
+	font:normal 15px cursive;
+}
+.more:hover{
+	background:#333 !important;
+	color:white;
+}
+.more:active{
+	border:solid 1px #e60e53;
+}
+
+main{
+	margin:0em;
+	padding:0em;
+	overflow:auto;
+}
+
+article{
+	margin:0em;
+	padding:0em;
+}
+article h1{
+	text-align:left;}
+article img{
+	width:99%;
+	display:block;
+	margin:5px;
+	align-items:center;
+	border-radius:2px;
+}
+
+article video{
+	width:221px;
+	height:221px;
+	display:inline;
+	margin:0.5em;
+	align-items:center;
+	border-radius:2px;
+}
+
+article section{
+	width:46%;
+	margin:0em;
+	display:inline-block;
+	border-radius:7px;
+}
+article p{
+	padding:0em 5em;
+}
+section p{
+	display:block;
+	clear:both;
+	padding:0em;
+	text-align:left !important;
+}
+
+.extend{
+	display:none;
+}
+.info_cube section{
+	color:f3f3f3 !important;
+	height:33%;
+	width:32%;
+	margin:0.1em 0em !important;
+	overflow:hidden;
+	text-shadow:-1px 1px 2px black;
+	transition:all 1s ease;
+}
+.info_cube h2{
+	position:relative;
+	top:150px;
+	border:none;
+	text-align:left;
+}
+
+#cube1{
+	background:url('images/camping.jpg')center no-repeat;
+	background-size:cover;
+}
+#cube2{
+	background:url('images/mombasa sunset-wide.jpg')center no-repeat;
+	background-size:cover;
+}
+#cube3{
+	background:url('images/lifebuoy.jpg')center no-repeat;
+	background-size:cover;
+}
+
+.card{
+	padding:3em 0;
+	text-align:left;
+}
+.card section{
+	width:32.5%;
+	height:550px;
+	margin:0.1em;
+	padding:0em;
+	color:#fff;
+	text-shadow:-1px 1px 2px #333;
+}
+
+.card h2,.card h5{
+	position:relative;
+	top:450px;
+	border:none;
+	margin-left:0.5em;
+}
+
+#discover{
+	background:#1b5c8c !important;
+	color:white !important;
+}
+#discover h1{
+	color:white !important;
+}
+#card1{
+	background:url('images/mt kenya camping.jpg')center no-repeat;
+	background-size:cover;
+}
+#card2{
+	background:url('images/ballooning.jpg')center no-repeat;
+	background-size:cover;
+}
+#card3{
+	background:url('images/sail boat.jpg')center no-repeat;
+	background-size:cover;
+}
+#card4{
+	background:url('images/mombasa hotel.jpg')center no-repeat;
+	background-size:cover;
+}
+#card5{
+	background:url('images/nairobi sunset.jpg')center no-repeat;
+	background-size:cover;
+}
+#card6{
+	background:url('images/samburu.jpg')center no-repeat;
+	background-size:cover;
+}
+
+.info_card{
+	padding:0 3em;
+}
+.info_card section{
+	width:32%;
+	margin:0.1em;
+	padding:0;
+	background:white;
+}
+
+.info_card p{
+	padding:0em 0.9em !important;
+}
+.imgsection{
+	background-size:cover;
+	color:white !important;
+	height:540px !important;
+	padding:0em;
+	margin:1em 0;
+	line-height:1.2;
+	text-shadow:-1px 1px 2px #333;
+}
+
+.imgsection section{
+	width:40%;
+	float:left;
+	position:relative;
+	top:50px;
+	margin:1em;
+	border:none;
+}
+.imgsection .more{
+	color:#333;
+	background:yellow;
+	font:normal 20px arial;
+	padding:0.5em;
+	border-radius:3px;
+	border:solid 1px yellow;
+	text-shadow:none;
+}
+.imgsection .more:hover{
+	color:white !important;
+}
+.imgsection h1{
+	color:white !important;
+	text-align:center;
+	font-size:27px;
+}
+#section1{
+	background:url('images/climbers mt kenya.jpg')center no-repeat;
+	background-size:cover;
+}
+
+#people{
+	border-radius:5px;
+}
+#people img{
+	border-radius:50%;
+	width:60%;
+	margin-left:4em;
+}
+#people section{
+	width:30%;
+	padding:0.5em;
+	border:solid 1px lightgray;
+}
+
+#sub-menu a{
+	color:#0ccf8a !important;
+}
+#social{
+	display:block;
+	padding:0px;
+	position:relative;
+	align-self:center;
+	margin:0px;
+}
+#social a{
+	text-decoration:none;
+	padding:0px !important;
+	margin:0px;
+	background:transparent;
+}
+
+#social button{
+	width:50px;
+	height:50px;
+	background:transparent;
+	border-radius:50%;
+	padding:0 0 !important;
+	margin:1em !important;
+	align-items:center;
+	border:none;
+	color:#0ccf8a !important;
+	}
+
+#social img{
+	width:110%;
+	margin:0;
+	padding:0;
+}
+#social button:hover{
+	transform:scale(1.2,1.2);
+}
+
+.bottom_logo{
+	background:url('images/gazelle logo white.png')center no-repeat;
+	background-size:contain;
+	width:95px;
+	height:75px;
+	margin-top:2em;
+	border:none;
+}
+footer{
+	background:#252a2f;
+	display:block;
+	width:100%;
+	text-align:center;
+	padding:0px;
+	font-size:12px;
+	margin:0px;
+	z-index:3;
+}
+
+footer li{
+	border-radius:5px;
+	display:inline-block;
+	text-decoration:none;
+	cursor:pointer;
+	margin:0.5em 0em;
+	font:normal 17px arial;
+}
+footer a{
+	color:white;
+	text-align:center;
+	text-decoration:none;
+	padding:0.5em;
+	border-radius:5px;
+	transition:all 0.5s ease;
+}
+footer a:hover{
+	color: red;
+}
+#trademark{
+	width:100%;
+	background:#0ccf8a99 !important;
+	line-height:1.6;
+	padding:0.3em;
+	color:#cdd8d6 !important;
+}
+#trademark h5{
+	color:#cdd8d6 !important;}
+
+
+@media screen and (max-width:720px){
+	.navbar_collapse{height:280px !important;}
+	h2{
+		font:normal 29px tahoma;}
+	.logo{
+		background:url('images/gazelle logo brown.png')center no-repeat;
+		background-size:contain;
+		width:80px;
+		height:60px;
+		z-index:8 !important;
+	}
+	
+	#showcase h1{
+		font:normal 30px trebuchet ms;
+	}
+	#showcase h2{
+		font:normal 42px geneva;
+	}
+	#showcase #social{
+		width:70%;
+		margin-left:4.5em !important;
+		z-index:4;
+	}
+	header .learn{
+		display:none;
+	}
+	
+	header{
+		background:white;
+		display:block;
+		height:4em;
+		padding:0.1em 0.2em;
+		margin-bottom:0px;
+	}
+	
+	.bar1,.bar2,.bar3{
+		width:30px;
+		height:5px;
+		margin:0.5rem;
+		background:#e96009;
+		box-shadow:none;
+		transition:all 0.5s ease;
+	}
+	.menu-list .learn{border:none;}
+	.info_cube section{
+		height:55%;
+		width:550px;
+		margin:0.1em 0em !important;
+	}
+	.info_cube h2{
+		position:relative;
+		top:250px;
+		border:none;
+		text-align:left;
+	}
+	.card section{
+		width:99%;
+		height:550px;
+		margin:0.1em;
+		padding:0em;
+	}
+	.card h2,.card h5{
+		position:relative;
+		border:none;
+	}
+	.info_card{
+		padding:0.1em;
+	}
+	.info_card section{
+		width:99%;
+		margin:1em 0;
+		float:left;
+	}
+	
+	.imgsection{
+		height:550px !important;
+	}
+	.imgsection section{
+		width:75% !important;
+		top:250px;
+		float:left;
+		
+	}
+	main{
+		width:99%;
+	}
+	article{
+		margin:0em;
+		padding:0em;
+	}
+	article img{
+		width:550px;
+		margin:0em;
+	}
+	
+	article p{
+		padding:0.1em;
+	}
+	section p{
+		padding:0.1em;
+	}
+	
+	article video{
+		width:240px !important;
+		height:240px !important;
+		margin:0.2em;
+	}
+}
+@media screen and (max-width:520px){
+	
+	.navbar_collapse{height:350px !important;}
+	
+	article img{
+		width:440px;
+		margin:0em;
+	}
+	article video{
+		width:211px !important;
+		height:211px !important;
+		margin:0.2em;
+	}
+	
+	.info_cube section{
+		height:50%;
+		width:450px;
+	}
+	.imgsection section{
+		width:95% !important;
+	}
+}
+@media screen and (max-width:480px){
+	
+	article video{
+		width:311px !important;
+		height:311px !important;
+		margin:0.2em;
+	}
+}

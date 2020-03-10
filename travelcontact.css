@@ -1,0 +1,419 @@
+*{
+	margin:0;
+	padding:0;
+	text-decoration:none;
+	box-sizing:border-box;
+}
+body{
+	background:url('images/giraffe feeding-wide.jpg')center no-repeat;
+	background-size:cover;
+	background-position:fixed;
+	font-family:Geneva,Tahoma,san-serif;
+	color:white;
+	line-height:1.3;
+	text-align:center;
+	width:100%;
+	height:100%;
+}
+
+.floating{float:left;}
+
+.divider{
+	background:transparent;
+	height:3em !important;
+}
+.spacer{
+	background:transparent;
+	height:2em !important;
+}
+.logo{
+	float:left;
+	position:relative;
+	cursor:pointer;
+	border:none;
+	background:url('images/gazelle logo white.png')center no-repeat;
+	background-size:contain;
+	width:80px;
+	height:60px;
+}
+
+header{
+	display:block;
+	height:4em;
+	padding:0.1em 0.2em;
+	margin-bottom:0px;
+	position:fixed;
+	width:100%;
+	z-index:4;
+	transition:top 0.3s;
+}
+.navbar_collapse{height:250px !important;}
+.menubtn{
+	display:block;
+	float:right;
+	margin:5px;
+	background:transparent;
+	border:none;
+	cursor:pointer;
+}
+.menubtn:hover{
+	border:solid 1px white;
+	border-radius:5px;
+}
+.bar1,.bar2,.bar3{
+	width:30px;
+	height:5px;
+	margin:0.5rem;
+	background:white;
+	box-shadow:1px 1px 1px 1px #333;
+	transition:all 0.5s ease;
+}
+.change .bar1{transform:rotate(-45deg) translate(-10px,10px)}
+.change .bar2{opacity:0;}
+.change .bar3{transform:rotate(45deg) translate(-8px,-8px)}
+
+.menu-list{
+	display:block;
+	float:right;
+	width:100%;
+	height:0;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	transition:all 0.5s ease;
+	list-style-type:none;
+	z-index:3;
+}
+.menu-list li{
+	display:block;
+	padding:0;
+	margin:0;
+	background:#05474d;
+	border-radius:0px;
+	padding:16px;
+	margin:0px;
+}
+.link{
+	font:normal 20px tahoma !important;
+	color:white;
+	text-shadow:-1px 1px 2px #333;
+	cursor:pointer;
+	text-decoration:none;
+	z-index:3;
+}
+#showcase{
+	height:100%;
+	width:100%;
+	background:rgba(0,0,0,0.2);
+	overflow:auto;
+}
+
+header #social{
+	margin:0;
+	width:80%;
+	margin-left:6em !important;
+	z-index:4;
+	}
+header #social button{
+	width:56px;
+	height:56px;
+	background:transparent;
+	padding:0 !important;
+	margin:0px !important;
+	align-items:center;
+	border:none;
+	transform:scale(1.3,1.3);
+	}
+
+header #social img{
+	width:100%;
+	margin:0;
+	padding:0;
+}
+header #social button:hover{
+	transform:scale(1.2,1.2);
+}
+
+h1{
+	font-size:32px;
+	text-shadow:-1px 1px 2px #333;}
+h2{
+	font-size:25px;
+	text-shadow:-1px 1px 2px #333;}
+h3{
+	font:bold 23px tahoma !important;
+	color:#8f3c07;
+	border-right:none !important;
+}
+h4{
+	font-size:17px;
+}
+h5{ 
+	font-size:15px;
+	margin:0.2em;
+	text-shadow:-1px 1px 2px #333;
+}
+
+.learn{
+	background:#16602e;
+	font:normal 18px tahoma;
+	color:white;
+	padding:0.3em 1em;
+	margin:0.5em;
+	border:solid 1px #16602e;
+	border-radius:22px;
+	text-shadow:-1px 1px 2px #333;
+	cursor:pointer;
+}
+.learn:hover{
+	background:black !important;
+	color:white;
+}
+.learn:active{
+	border:solid 1px red;
+}
+
+.X{
+	background:#993e33;
+	float:right;
+	font:normal 19px tahoma;
+	color:white;
+	padding:0.1em;
+	border:solid 1px #993e33;
+	text-shadow:-1px 1px 2px #333;
+	cursor:pointer;
+}
+.X:hover{
+	background:red;
+}
+main{
+	position:relative;
+	top:31%;
+}
+article{
+	padding:0em;
+	width:45%;
+}
+article img{
+	width:31%;
+	margin:0.1em;
+}
+
+article video{
+	width:32.5%;
+	display:inline;
+	margin:0em;
+	align-items:center;
+	border-radius:2px;
+}
+
+article section{
+	width:45%;
+	margin:0.5em;
+	display:inline-block;
+	border-radius:7px;
+}
+article p{
+	padding:1em 7em;
+}
+section p{
+	display:block;
+	clear:both;
+	padding:0em;
+	text-align:left !important;
+}
+#contact-form{
+	display:none;
+	width:50% !important;
+	float:right;
+	overflow:auto;
+	position: relative;
+	animation: pages;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+
+@keyframes pages{
+	0% {right: 60%;opacity: 0}
+	100% {right: 0%;opacity: 1}
+}
+#contact-form section{
+	text-align:center;
+	width:90% !important;
+	float:right;
+	margin:0;
+}
+#contact-form textarea{
+	width:70%;
+	height:4em;
+	font:normal 15px verdana;
+	padding:5px;
+	border:solid 1px #b6b6b6;
+	border-radius:3px;
+}
+.form{
+	width:70%;
+	height:2.5em;
+	font-size:15px;
+	padding:5px;
+	background:#e9e9e9;
+	border-radius:3px;
+}
+.click{
+	background:#e60e53;
+	color:white;
+	padding:0.3em;
+	margin:1em;
+	border:solid 1px #e60e53;
+	border-radius:22px;
+	cursor:pointer;
+	text-decoration:none;
+}
+.click:active{
+	opacity:0.5;
+}
+
+#social{
+	display:block;
+	padding:0px;
+	position:relative;
+	align-self:center;
+	margin:0px;
+}
+#social a{
+	text-decoration:none;
+	padding:0px !important;
+	margin:0px;
+	background:transparent;
+}
+
+#social button{
+	width:55px;
+	height:55px;
+	background:transparent;
+	border-radius:50%;
+	padding:0 0 !important;
+	margin:1em 0.5em !important;
+	align-items:center;
+	border:none;
+	}
+
+#social img{
+	width:110%;
+	margin:0;
+	padding:0;
+}
+#social button:hover{
+	transform:scale(1.2,1.2);
+}
+
+footer{
+	background:rgba(0,0,0,0);
+	display:block;
+	width:100%;
+	text-align:center;
+	margin-top:2em;
+	z-index:3;
+}
+footer p{
+	font:bold 16px arial;
+	color:white;
+	line-height:1.6;
+	padding:0.3em;
+	text-shadow:-1px 1px 2px black;
+}
+
+@media screen and (max-width:720px){
+	.navbar_collapse{height:280px !important;}
+	body{
+		background:url('images/natural landscape.jpg')center no-repeat;
+		background-size:cover;
+	}
+	.logo{
+		background:url('images/gazelle logo brown.png')center no-repeat;
+		background-size:contain;
+		width:80px;
+		height:60px;
+		z-index:8 !important;
+	}
+	
+	#showcase #social{
+		width:70%;
+		margin-left:4.5em !important;
+		z-index:4;
+	}
+	
+	header{
+		background:white;
+		display:block;
+		height:4em;
+		padding:0.1em 0.2em;
+		margin-bottom:0px;
+	}
+	.bar1,.bar2,.bar3{
+		width:30px;
+		height:5px;
+		margin:0.5rem;
+		background:#e96009;
+		box-shadow:none;
+		transition:all 0.5s ease;
+	}
+	h3{
+		color:#14bc92;
+	}
+	main{
+		width:99%;
+	}
+	article{
+		margin:0em;
+		padding:0em;
+		width:99%;
+	}
+	article section{
+		width:100%;
+	}
+	article img{
+		width:99%;
+		margin:0em;
+	}
+	
+	article p{
+		padding:0.1em;
+	}
+	section p{
+		padding:0.1em;
+	}
+	
+	article video{
+		width:240px !important;
+		height:240px !important;
+		margin:0.2em;
+	}
+	
+	#contact-form{
+		display:none;
+		width:99% !important;
+		float:right;
+	}
+
+	@keyframes pages{
+		0% {top: 60%;opacity: 0}
+		100% {top: 0%;opacity: 1}
+	}
+	#contact-form section{
+		text-align:center;
+		width:95% !important;
+		float:right;
+		margin:0;
+		margin-bottom:2em;
+	}
+}
+@media screen and (max-width:480px){
+	
+	article video{
+		width:311px !important;
+		height:311px !important;
+		margin:0.2em;
+	}
+}
